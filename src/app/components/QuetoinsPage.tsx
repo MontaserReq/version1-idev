@@ -57,7 +57,7 @@ const QuizPage = () => {
 
   const handleAnswer = async (choice: any) => {
     const correctAnswer = questions[currentQuestion].answer;
-    const points = choice === correctAnswer ? calculatePoints(timeLeft) : 0;
+    const points = choice === correctAnswer ? 1 + calculatePoints(timeLeft) : 0;  
   
     setSelectedAnswer(choice);
     if (choice === correctAnswer) {
