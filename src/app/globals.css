@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  /* تخصيص شريط التمرير نفسه */
+  ::-webkit-scrollbar {
+    width: 15px; /* عرض شريط التمرير */
+    background-color: #f8a834; /* لون خلفية شريط التمرير */
+  }
+  
+  /* تخصيص مقبض شريط التمرير (الجزء الذي يُسحب) */
+  ::-webkit-scrollbar-thumb {
+    background-color:#1e2227;
+    
+  
+  }
+  
+  /* تخصيص جزء شريط التمرير الذي لا يحتوي على المقبض */
+  ::-webkit-scrollbar-track {
+    background-color: #f8a834;
+  }
+
+
+.bebas {
+  font-family: 'Poppins', sans-serif;
+}
+.pulse-animation {
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
