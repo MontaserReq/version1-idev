@@ -1,7 +1,6 @@
 import AboutChallenge from "./components/AboutChallenge";
 import Challenge from "./components/Challenge";
 import Home from "./components/Home";
-import Links from "./components/Links";
 
 export default function Page() {
   return (

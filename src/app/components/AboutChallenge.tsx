@@ -4,10 +4,10 @@ const AboutChallenge = () => {
   return (
     <div
       id="aboutChallenge"
-      className="flex flex-wrap items-center justify-evenly min-h-screen text-white p-6 space-y-8"
+      className="flex flex-wrap arabic-text items-center justify-evenly min-h-screen card text-white p-6 space-y-8"
     >
       {/* Card 1 */}
-      <div className="bg-[#1e2227] text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
+      <div className="bg-[#1e2227] text-center p-6 rounded-lg shadow-lg card w-full md:w-[45%] lg:w-[30%] space-y-5">
         <h1 className="text-3xl font-bold text-[#f8a834]">المرحلة الأولى</h1>
         <p>
           اختبار المشتركين بأسئلة اختيار من متعدد ويتم اختيار عدد معين من
@@ -16,7 +16,7 @@ const AboutChallenge = () => {
       </div>
 
       {/* Card 2 */}
-      <div className="bg-[#1e2227] text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
+      <div className="bg-[#1e2227] card text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
         <h1 className="text-3xl font-bold text-[#f8a834]">المرحلة الثانية</h1>
         <p>
           المتأهلين من المرحلة الأولى يتم اختبارهم عن طريق مقابلة قصيرة
@@ -25,7 +25,7 @@ const AboutChallenge = () => {
       </div>
 
       {/* Card 3 */}
-      <div className="bg-[#1e2227] text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
+      <div className="bg-[#1e2227] card text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
         <h1 className="text-3xl font-bold text-[#f8a834]">المرحلة الثالثة</h1>
         <p>
           في هاي المرحلة راح يتم عمل تصفيات على شكل حلقات مصورة ترفع على
@@ -35,7 +35,7 @@ const AboutChallenge = () => {
       </div>
 
       {/* Card 4 */}
-      <div className="bg-[#1e2227] text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
+      <div className="bg-[#1e2227] card text-center p-6 rounded-lg shadow-lg w-full md:w-[45%] lg:w-[30%] space-y-5">
         <h1 className="text-3xl font-bold text-[#f8a834]">المرحلة الرابعة</h1>
         <p>
           المرحلة الحاسمة وهي تصفيات على مستوى الجامعات الأردنية ويتأهل

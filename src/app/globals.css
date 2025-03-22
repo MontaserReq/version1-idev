@@ -17,10 +17,11 @@
   }
   
   /* تخصيص مقبض شريط التمرير (الجزء الذي يُسحب) */
-  ::-webkit-scrollbar-thumb {
+  .light ::-webkit-scrollbar-thumb {
+    background-color:white;
+  }
+  .dark ::-webkit-scrollbar-thumb {
     background-color:#1e2227;
-    
-  
   }
   
   /* تخصيص جزء شريط التمرير الذي لا يحتوي على المقبض */
@@ -46,4 +47,75 @@
   100% {
     transform: scale(1);
   }
+}
+@font-face {
+  font-family: 'Futura Display';
+  src: url('/fonts/futura-display.woff2') format('woff2'),
+       url('/fonts/futura-display.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'DG Forsha';
+  src: url('/fonts/dg-forsha-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.arabic-text {
+  font-family: 'DG Forsha', sans-serif;
+}
+.english-text {
+  font-family: 'Futura Display', sans-serif;
+}
+
+.light {
+  background-image: url('/images/lightbg.png'); /* اختر الصورة التي تريد استخدامها */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* الوضع الداكن */
+.dark {
+  background-color: #1e2227; /* اختر اللون الذي تريده */
+}
+/* للألوان النصية في الوضع الفاتح */
+.light .text-primary {
+  color: #2e3d4e; /* النص الأسود في الوضع الفاتح */
+}
+
+/* للألوان النصية في الوضع الداكن */
+.dark .text-primary {
+  color: #ffffff; /* النص الأبيض في الوضع الداكن */
+}
+.light .bg-mode {
+  background-color: white;
+  border:2px solid #1e2227;
+}
+
+/* للألوان النصية في الوضع الداكن */
+.dark .bg-mode {
+  background-color: #1e2227;
+  border:2px solid white;
+}
+.light .card {
+  background-color: rgba(255, 255, 255, 0.096);
+  color: #1e2227;
+}
+
+/* للألوان النصية في الوضع الداكن */
+.dark .card {
+  background-color: #1e2227;
+}
+
+.light .card-q {
+  border: 3px solid #1e2227;
+  color: #1e2227;
+  background-color: rgba(255, 255, 255, 0.096);
+}
+.light .card-f {
+  color: white;
+  background-color:#1e2227 ;
 }

@@ -18,26 +18,29 @@ const Header = () => {
 
   // ✅ Load theme from localStorage
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
+    if (typeof window !== "undefined") {
+      const savedTheme = localStorage.getItem("theme") || "light";
+      setTheme(savedTheme);
+      document.documentElement.classList.remove("light", "dark");
+      document.documentElement.classList.add(savedTheme);
     }
   }, []);
+  
 
   // ✅ Toggle light/dark theme
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
+// ✅ Toggle light/dark theme
+const toggleTheme = () => {
+  const newTheme = theme === "light" ? "dark" : "light";
+  setTheme(newTheme);
 
-    if (newTheme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+  // إزالة الكلاسات القديمة وإضافة الكلاسات الجديدة
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.classList.add(newTheme);
 
-    localStorage.setItem("theme", newTheme);
-  };
+  // تخزين التفضيلات في localStorage
+  localStorage.setItem("theme", newTheme);
+};
+
 
   // ✅ Track active section while scrolling
   useEffect(() => {
@@ -61,17 +64,17 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="bg-primary py-6 fixed w-full z-50">
+    <header className="bg-primary  py-6 fixed w-full z-50 ">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* ✅ Logo */}
-        <div className="text-white font-bold text-2xl">
+        <div className="text-white font-bold text-2xl english-text text-primary ">
           <span className="text-accent text-[#f8a834]">i</span>Dev{" "}
           <span className="text-[10px] text-[#f8a834]">Beta</span>
         </div>
 
         {/* ✅ Desktop Navigation */}
-        <nav className="hidden md:flex">
-          <ul className="flex gap-6 md:gap-12 uppercase text-white font-medium">
+        <nav className="hidden md:flex arabic-text  ">
+          <ul className="flex gap-6 md:gap-12 uppercase text-white text-primary  font-medium">
             {Object.entries(sections).map(([arabic, sectionId]) => (
               <li key={sectionId}>
                 <Link
@@ -101,15 +104,15 @@ const Header = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="text-white md:hidden text-3xl"
           >
-            {isOpen ? <FiX /> : <FaHamburger />}
+            {isOpen ? <FiX className="text-primary"/> : <FaHamburger className="text-primary"/>}
           </button>
         </div>
       </div>
 
       {/* ✅ Mobile Navigation Menu */}
       {isOpen && (
-        <nav className="md:hidden fixed top-7 left-0 w-full bg-primary z-50 py-4">
-          <ul className="flex flex-col items-center gap-4 uppercase text-white font-3xl bg-[#1e2227] border-white border-2 m-4 p-4">
+        <nav className="md:hidden fixed top-7 left-0 w-full bg-primary  z-50 py-4">
+          <ul className="flex flex-col items-center gap-4 uppercase text-white bg-mode font-bold text-primary  font-3xl bg-[#1e2227] border-white border-2 m-4 p-4">
             {Object.entries(sections).map(([arabic, sectionId]) => (
               <li key={sectionId}>
                 <Link

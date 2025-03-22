@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-           <body className={`${bebasNeue.variable} bg-[#1e2227] h-screen bg-[url('/images/background.svg')] bg-center bg-no-repeat bg-fixed bg-cover min-h-screen `}>{children}</body>
+           <body className={`${bebasNeue.variable}  h-screen bg-[url('/images/background.svg')] bg-center bg-no-repeat bg-fixed bg-cover min-h-screen `}>{children}</body>
     </html>
   );
 }
