@@ -190,7 +190,7 @@ const QuizPage = () => {
               ))}
             </div>
             <div className="mt-4 text-center text-lg card font-semibold">
-              ⏳ الوقت المتبقي: <span className="text-yellow-400">{timeLeft}</span>
+              ⏳ الوقت المتبقي: <span className="text-[#f8a834]">{timeLeft}</span>
             </div>
           </div>
         )}
