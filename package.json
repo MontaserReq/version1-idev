@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack" ,
+    "dev": "next dev --turbopack",
     "build": "next build && npx prisma generate",
     "start": "next start",
     "lint": "next lint"
@@ -45,13 +45,13 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.0.12",
     "@types/next-auth": "^3.13.0",
-    "@types/node": "^20",
-    "@types/react": "^19",
+    "@types/node": "20.17.27",
+    "@types/react": "19.0.12",
     "@types/react-dom": "^19",
     "@types/uuid": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
     "prisma": "^6.5.0",
-    "typescript": "^5"
+    "typescript": "5.8.2"
   }
 }
