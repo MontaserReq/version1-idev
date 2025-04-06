@@ -8,6 +8,7 @@ export default function Page() {
       <section id="/home"><Home   /></section>
       <section id="/challenge"><Challenge/></section>
       <section id="/aboutChallenge"><AboutChallenge/></section>
+      
     </main>
   )
 }
