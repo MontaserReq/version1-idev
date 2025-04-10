@@ -4,7 +4,7 @@ const AboutChallenge = () => {
   return (
     <div
       id="aboutChallenge"
-      className="flex flex-wrap arabic-text items-center justify-evenly min-h-screen card text-white p-6 space-y-8"
+      className="flex flex-wrap arabic-text items-center justify-evenly min-h-screen  text-white p-6 space-y-8"
     >
       {/* Card 1 */}
       <div className="bg-[#1e2227] text-center p-6 rounded-lg shadow-lg card w-full md:w-[45%] lg:w-[30%] space-y-5">

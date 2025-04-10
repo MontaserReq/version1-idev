@@ -48,7 +48,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${bebasNeue.variable} bg-[#1e2227] h-screen bg-[url('/images/background.svg')] bg-center bg-no-repeat bg-fixed bg-cover min-h-screen`}
+        className={`${bebasNeue.variable}  h-screen bg-[url('/images/background.svg')] bg-center bg-no-repeat bg-fixed bg-cover min-h-screen`}
       >
         {children}
       </body>
